@@ -14,4 +14,6 @@ def sum_and_product (x,y) :
 sp = sum_and_product(2,3)    # =(5 , 6)
 s,p = sum_and_product(5,10)  # s = 15, p = 50
 
+x,y =1,2 
+x,y= y, x    # x=2 y=1
 
