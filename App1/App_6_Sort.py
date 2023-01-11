@@ -27,3 +27,11 @@ subtract(10,5) # 5
 subtract(0,5)  #-5
 subtract(b=5)  #-5
 
+tab_string='\t'         #обозначает символ \t
+not_tab_string=r"\t"    #обозначает символы \ и t
+print(len(tab_string))
+
+try:
+    print(0/0)
+except ZeroDivisionError :
+    print("нельзя делить на ноль")
