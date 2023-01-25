@@ -58,3 +58,16 @@ dd_dict = defaultdict(dict)   # dict()  возвращает пустой сло
 dd_dict ["Grisha"]["City"] = "Seattle"  # {"Grisha" : {"City":"Seattle"}}
 dd_pair = defaultdict (lambda:[0,0])
 dd_pair[2][1] = 1     # теперь dd_pair содержит {2:[0,1]}
+
+# ************** Counter ****
+from collections import Counter
+c = Counter([0,1,2,0])  # в результате с = {0:2 , 1:1, 2:1 } 0 - два раза встречается. Гистограммы
+
+# лучший вариант подсчета частотностей слов
+word_count = Counter(doc)  
+
+# напечатает 10 наиболее встречаемых слов и их частотность (встречаемость)
+for word, count in word_count.most_common(10):
+    print(word,count)
+
+
