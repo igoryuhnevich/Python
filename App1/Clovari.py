@@ -41,14 +41,14 @@ doc = {}          # документ
 for word in doc :    #перебор слов в тексте
     if word in word_count:       #    
         word_count[word] += 1    #  если есть слово добавляет всречаемость(+1)
-    else: word_count[word] = 1   #  если нет - добавляет новое слово в словарь(ключь)
+    else: word_count[word] = 1   #  если нет - добавляет новое слово в словарь(ключ)
 # *******
 
 from collections import defaultdict
 
 word_count = defaultdict(int)   #  если нет ключа(слова) - добавляет значение  0. int() возвращает 0.
 for word in doc:
-    word_count[word] += 1       #  если есть слово добавляет всречаемость(+1)
+    word_count[word] += 1       #  если есть слово - добавляет всречаемость(+1)
 
 #********************
 
