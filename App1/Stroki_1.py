@@ -46,5 +46,50 @@ text = "python is a product of the python software foundation"
 text.capitalize()    # 'Python is a product of the python software foundation'
 
 
+# Преобразование строки в другой тип
+# int
+int('10')                # 10
+int('0x12F',base=16)     # 303
+# list
+'one two three four'.split()          # ["one","two","three","four"]
+'one, two, three, four'.split(',')    # ["one","two","three","four"]  
+# bytes
+'Bytes'.encode('utf-8')       # '\xd0\x91\xd0\xb0\xb9\xd1\x82\xd1\x8b'
+# datetime
+from datetime import datetime
+datetime.strptime('jan 1 2020  1^33PM',"%b %d %Y %I :%M%p")  # 2020-01-01  13:33:00
+# float
+float('1.5')    # 1.5
+# dict
+import json
+json.loads('{"Russia":"Moscow", "France":"Paris"}')     # {"Russia":"Moscow", "France":"Paris"}      
+# json
+import json
+json.dumps("hello")   # ' "hello" '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
