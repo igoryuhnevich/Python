@@ -10,7 +10,8 @@
 9.string → dict
 10.string → json
  """
-
+n = 10 
+s = "stroka"
 str(n)  # преобразование к строке
 len(s)  # длина строки
 chr(s)  # получение символа по ASCII
