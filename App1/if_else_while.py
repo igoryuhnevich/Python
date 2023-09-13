@@ -44,7 +44,7 @@ print(more_then_five([-11,2,3,55,-23,535,0]))
 letters = 'KJdjdjKKdjdjdcioeLLmMMM'
 clear_str = ''
 for letter in letters:
-    if  letter.islower():
+    if  letter.islower():   
         clear_str += letter
 print(clear_str)
 print(letters)
@@ -71,4 +71,15 @@ while nick not in secret_list:
 else : print (f'You are greate! {nick}')
  
 
-    
+# Найти делители чисел 23436,190187200,380457890232
+# Результат - список. all_divisors(number)   
+def all_divisors(number):
+    lst = [1,number]
+    for i in range(2,1+int(number**0.5)):
+        if number % i == 0:
+            lst.extend({number//i,i})
+    return sorted(lst)
+
+print (all_divisors(6))
+
+
