@@ -73,7 +73,7 @@ for a in string:
           newstring += a
         
 print(newstring,count2,count3,count1)    
-
+     
 
 
 
