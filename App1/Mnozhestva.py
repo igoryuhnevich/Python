@@ -8,7 +8,7 @@ z = 3 in s  # false
 # поиск in в множествах очень быстрый
 
 #проверка на пренадлежность некоторой последовательности
-stopw_list = ['a','an','at'] + other_words + ['yet','you']
+stopw_list = ['a','an','at'] + 'other_words' + ['yet','you']
 'zip' in stopw_list     # false, проверяется каждый элемент
 # множество стоп-слов
 stopw_set = set(stopw_list)
