@@ -12,15 +12,15 @@ name_arch = time.strftime('%H%M%S')
 
 comment = input("Input the comment -->")
 if len(comment) == 0:
-    target = target_poddir + os.sep + name_arch + '.zip'
+    target = target_poddir + os.sep + name_arch + '.rar'
 else : target = target_poddir + os.sep + '_'+ \
-    comment.replace(' ','_') + '.zip'
+    comment.replace(' ','_') + '.rar'
 
 if not os.path.exists(target_poddir):
     os.makedirs(target_poddir)
     print('Catalog is created',target_poddir)
 
-zip_command = "zip -qr {0} {1}".format(target,' '.join(sourse))
+zip_command =  "WinRaR -qr {0} {1}".format(target,' '.join(sourse))
 
 if os.system(zip_command) == 0:
     print('Suseful!',target)
