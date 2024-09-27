@@ -1,2 +1,7 @@
-
-ДА!
+find ! in ДА!LLLL
+find DDDD in LLLLDDDDSSSS
+find DDDD in DDDD
+not found - Fnot found - Fnot found - Fnot found - Fnot found - FLLLLDDDDSSSS
+not found - FДА!LLLL
+not found - FDDDD
+not found - FSSSS
